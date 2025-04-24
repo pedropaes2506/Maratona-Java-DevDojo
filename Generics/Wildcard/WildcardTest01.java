@@ -1,4 +1,4 @@
-package Generics;
+package Generics.Wildcard;
 
 abstract class Animal {
     public abstract void consulta();
