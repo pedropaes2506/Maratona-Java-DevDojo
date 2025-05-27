@@ -1,9 +1,9 @@
 package Threads;
 
-class ThreadExampleRunnable implements Runnable  {
+class ThreadExampleRunnable1 implements Runnable  {
     private char c;
 
-    public ThreadExampleRunnable(char c) {
+    public ThreadExampleRunnable1(char c) {
         this.c = c;
     }
 
@@ -26,10 +26,10 @@ class ThreadExampleRunnable implements Runnable  {
 
 public class ThreadTest02 {
     public static void main(String[] args) {
-        Thread t1 = new Thread(new ThreadExampleRunnable('A'));
-        Thread t2 = new Thread(new ThreadExampleRunnable('B'));
-        Thread t3 = new Thread(new ThreadExampleRunnable('C'));
-        Thread t4 = new Thread(new ThreadExampleRunnable('D'));
+        Thread t1 = new Thread(new ThreadExampleRunnable1('A'));
+        Thread t2 = new Thread(new ThreadExampleRunnable1('B'));
+        Thread t3 = new Thread(new ThreadExampleRunnable1('C'));
+        Thread t4 = new Thread(new ThreadExampleRunnable1('D'));
 
         t4.setPriority(Thread.MAX_PRIORITY);
 
